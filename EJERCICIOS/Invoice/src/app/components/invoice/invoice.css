@@ -1,0 +1,16 @@
+.card-header {
+  background-color: #8b2a7e;
+  color: rgb(30, 26, 12);
+  text-align: center;
+}
+
+.list-group-item {
+  font-size: 1.2rem;
+}
+.card-body{
+    background-color: rgb(239, 174, 174);
+}
+h2{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40;
+}

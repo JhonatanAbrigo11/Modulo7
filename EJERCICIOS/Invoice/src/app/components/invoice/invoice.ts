@@ -9,6 +9,7 @@ import { InvoiceDetail } from "../invoice-detail/invoice-detail";
   selector: 'app-invoice',
   imports: [CompanyView, CustomerView, InvoiceDetail],
   templateUrl: './invoice.html',
+  styleUrls: ['./invoice.css']
 })
 export class InvoiceComponent implements OnInit {
   invoice!:Invoice;
