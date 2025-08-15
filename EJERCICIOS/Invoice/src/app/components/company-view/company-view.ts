@@ -8,5 +8,5 @@ import { Company } from '../../model/Company';
 
 })
 export class CompanyView {
-  @Input()company!:Company
+  @Input()company?:Company
 }

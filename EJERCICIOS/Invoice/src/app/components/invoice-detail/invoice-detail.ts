@@ -8,5 +8,5 @@ import { InvoiceItemComponent } from "../invoice-item/invoice-item";
   templateUrl: './invoice-detail.html',
 })
 export class InvoiceDetail {
-  @Input() items!:InvoiceItem[]
+  @Input() items?:InvoiceItem[]
 }

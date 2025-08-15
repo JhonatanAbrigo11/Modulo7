@@ -5,7 +5,7 @@ export const invoiceData:Invoice = {
     company: {
         ruc: '1234567891001',
         name: 'Clear Minds Consulteres',
-        address: {
+        addrees: {
             city: 'Quito',
             principalStreet: 'Juan Pablo Sanz',
             secondaryStreet: 'Iñaquito',

@@ -1,26 +1,34 @@
 import { Component, OnInit } from '@angular/core';
 import { InvoiceService } from '../../services/invoice';
 import { Invoice } from '../../model/Invoice';
-import { CompanyView } from "../company-view/company-view";
-import { CustomerView } from "../customer-view/customer-view";
-import { InvoiceDetail } from "../invoice-detail/invoice-detail";
+import { CompanyView } from '../company-view/company-view';
+import { CustomerView } from '../customer-view/customer-view';
+import { InvoiceDetail} from '../invoice-detail/invoice-detail';
 
 @Component({
   selector: 'app-invoice',
+  standalone: true,
   imports: [CompanyView, CustomerView, InvoiceDetail],
   templateUrl: './invoice.html',
   styleUrls: ['./invoice.css']
 })
 export class InvoiceComponent implements OnInit {
-  invoice!:Invoice;
+  invoice!: Invoice;
 
-  constructor(private service:InvoiceService){}
+  constructor(private service: InvoiceService) {}
 
   ngOnInit(): void {
-   this.invoice=this.service.getInvoice();
+    this.service.getInvoice().subscribe(
+      (data: Invoice) => {
+        this.invoice = data;
+        console.log('Datos recibidos del backend:', this.invoice);
+      
+      },
+      (error) => {
+        console.error('Error al obtener datos del backend:', error);
+        console.error('Asegúrate de que el backend esté en puerto 3000');
 
+      }
+    );
   }
-
 }
-export { Invoice };
-

@@ -8,5 +8,5 @@ import { Customer } from '../../model/Customer';
  
 })
 export class CustomerView {
-  @Input() customer!:Customer;
+  @Input() customer?:Customer;
 }
