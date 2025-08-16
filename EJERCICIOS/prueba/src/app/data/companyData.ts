@@ -161,8 +161,5 @@ export const companyData: Company = {
                 }
             ]
         }
-    ],
-    suscribe: function (arg0: (data: Company) => void, arg1: (error: any) => void): void {
-        throw new Error("Function not implemented.");
-    }
+    ]
 } 

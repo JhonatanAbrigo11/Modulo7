@@ -11,7 +11,7 @@ export class companyService {
   constructor(private http: HttpClient) { }
   getCompany(): Observable<Company> {
     console.log('CompanyService: solicitando datos del backend...');
-    return this.http.get<Company>(`${this.apiUrl}/invoice`);
+    return this.http.get<Company>(`${this.apiUrl}/company`);
   }
 
   checkBackendHealth(): Observable<any> {
