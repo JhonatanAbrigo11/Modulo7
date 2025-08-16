@@ -1,0 +1,13 @@
+<table class="table table-striped">
+    <thead>
+        <th>CEDULA</th>
+        <th>NOMBRE</th>
+        <th>APELLIDO</th>
+        <th>CURSO</th>
+    </thead>
+    <tbody>
+        @for (item of items; track $index) {
+            <tr student-view [student]="item" ></tr>
+        }
+    </tbody>
+</table>

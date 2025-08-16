@@ -1,0 +1,19 @@
+<table class="table table-striped">
+    <thead>
+        <th>SUCURSAL</th>
+        <th>NOMBRE</th>
+        <th>DIRECCION</th>
+    </thead>
+    <tbody>
+        @for (item of items; track $index) {
+        <tr app-sucursalItem [item]="item"></tr>
+        @for (item of item.products; track $index) {
+        <tr>PRODUCTO----- Nombre:{{item.name}}-----------Stock: {{item.stock}}-------------- Categoria: {{item.categoria.name}} </tr>
+        }
+
+
+        }
+
+
+    </tbody>
+</table>

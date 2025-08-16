@@ -1,0 +1,33 @@
+<div class="container my-5">
+  <div class="card shadow">
+    <div class="card-header text-center bg-light">
+      <h2 class="fw-bold mb-0">CURSO</h2>
+    </div>
+
+    <div class="card-body">
+      <!-- ID del Curso -->
+      <div class="mb-3">
+        <p><strong>ID del curso:</strong> {{ course?.id }}</p>
+      </div>
+
+      <!-- PARALELO y PROFESOR -->
+      <div class="row mb-4">
+        <!-- Componente del Paralelo -->
+        <div class="col-md-6">
+          <class-component [class]="course?.class"></class-component>
+        </div>
+
+        <!-- Componente del Profesor -->
+        <div class="col-md-6">
+          <teacher-view [teacher]="course?.teacher"></teacher-view>
+        </div>
+      </div>
+
+      <!-- Tabla de estudiantes -->
+      <h4 class="fw-bold mb-3">ESTUDIANTES</h4>
+      <div class="card p-3">
+        <student-titulos [items]="course?.students"></student-titulos>
+      </div>
+    </div>
+  </div>
+</div>

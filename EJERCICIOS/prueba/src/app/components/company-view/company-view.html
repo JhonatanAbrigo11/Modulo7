@@ -1,0 +1,28 @@
+<div class="container">
+    <div class='card my-5'>
+        <div class="card-header">
+            <h2>FASHION TRENDS</h2>
+        </div>
+        <div class="card-body">
+            <div>
+                <ul class="list-group">
+                    <li class="list-group-item">ID: {{comapany?.id}}</li>
+                    <li class="list-group-item">RUC: {{comapany?.ruc}}</li>
+                    <li class="list-group-item">RUC: {{comapany?.name}}</li>
+                    <li class="list-group-item">Direccion: {{comapany?.adress?.city}}</li>
+                </ul>
+            </div>
+            <div class='row'>
+                <div class="col">
+
+                </div>
+                <div class='col'>
+                    
+                </div>
+            </div>
+            <div class="card my-3">
+                <app-sucursal [items]="comapany?.sucursal"></app-sucursal>
+            </div>
+        </div>
+    </div>
+</div>
