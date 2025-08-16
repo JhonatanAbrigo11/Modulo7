@@ -14,7 +14,7 @@ export const companyData: Company = {
         {
             id: '002',
             name: "Fashion Trends 1",
-            adrees:{
+            adrees: {
                 city: "Quito",
                 principalStreet: "CALLE 1",
                 secondaryStreet: "CALLE 2",
@@ -30,7 +30,7 @@ export const companyData: Company = {
                         name: "Formal"
                     },
                 },
-                 {
+                {
                     id: 2,
                     name: 'Jeans',
                     stock: 10,
@@ -41,10 +41,10 @@ export const companyData: Company = {
                 }
             ]
         },
-         {
+        {
             id: '003',
             name: "Fashion Trends 2",
-            adrees:{
+            adrees: {
                 city: "Guayaquil",
                 principalStreet: "CALLE 1",
                 secondaryStreet: "CALLE 2",
@@ -60,7 +60,7 @@ export const companyData: Company = {
                         name: "Formal"
                     },
                 },
-                 {
+                {
                     id: 2,
                     name: 'Camiseta',
                     stock: 10,
@@ -71,10 +71,10 @@ export const companyData: Company = {
                 }
             ]
         },
-         {
+        {
             id: '004',
             name: "Fashion Trends 3",
-            adrees:{
+            adrees: {
                 city: "Loja",
                 principalStreet: "CALLE 1",
                 secondaryStreet: "CALLE 2",
@@ -90,7 +90,7 @@ export const companyData: Company = {
                         name: "Formal"
                     },
                 },
-                 {
+                {
                     id: 2,
                     name: 'Pantaloneta',
                     stock: 10,
@@ -101,10 +101,10 @@ export const companyData: Company = {
                 }
             ]
         },
-         {
+        {
             id: '005',
             name: "Fashion Trends 4",
-            adrees:{
+            adrees: {
                 city: "Zamora",
                 principalStreet: "CALLE 1",
                 secondaryStreet: "CALLE 2",
@@ -120,7 +120,7 @@ export const companyData: Company = {
                         name: "Formal"
                     },
                 },
-                 {
+                {
                     id: 2,
                     name: 'Sudaderas',
                     stock: 10,
@@ -131,10 +131,10 @@ export const companyData: Company = {
                 }
             ]
         },
-         {
+        {
             id: '006',
             name: "Fashion Trends 5",
-            adrees:{
+            adrees: {
                 city: "Catamayo",
                 principalStreet: "CALLE 1",
                 secondaryStreet: "CALLE 2",
@@ -150,7 +150,7 @@ export const companyData: Company = {
                         name: "Formal"
                     },
                 },
-                 {
+                {
                     id: 2,
                     name: 'Bermuda',
                     stock: 10,
@@ -161,5 +161,8 @@ export const companyData: Company = {
                 }
             ]
         }
-    ]
+    ],
+    suscribe: function (arg0: (data: Company) => void, arg1: (error: any) => void): void {
+        throw new Error("Function not implemented.");
+    }
 } 

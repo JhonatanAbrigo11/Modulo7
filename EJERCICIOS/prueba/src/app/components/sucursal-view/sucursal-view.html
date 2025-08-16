@@ -8,9 +8,9 @@
         @for (item of items; track $index) {
         <tr app-sucursalItem [item]="item"></tr>
         @for (item of item.products; track $index) {
-        <tr>PRODUCTO----- Nombre:{{item.name}}-----------Stock: {{item.stock}}-------------- Categoria: {{item.categoria.name}} </tr>
+        <tr>PRODUCTO----- Nombre:{{item.name}}-----------Stock: {{item.stock}}-------------- Categoria:
+            {{item.categoria.name}} </tr>
         }
-
 
         }
 
